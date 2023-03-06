@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		0B3D2DC61F439E2D002D7D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2DC51F439E2D002D7D1C /* AppDelegate.swift */; };
-		0B3D2DC81F439E2D002D7D1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2DC71F439E2D002D7D1C /* ViewController.swift */; };
+		0B3D2DC81F439E2D002D7D1C /* MainTankFieldScene_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2DC71F439E2D002D7D1C /* MainTankFieldScene_VC.swift */; };
 		0B3D2DCB1F439E2D002D7D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3D2DC91F439E2D002D7D1C /* Main.storyboard */; };
 		0B3D2DCD1F439E2D002D7D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3D2DCC1F439E2D002D7D1C /* Assets.xcassets */; };
-		0B3D2DD01F439E2D002D7D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3D2DCE1F439E2D002D7D1C /* LaunchScreen.storyboard */; };
+		638334DA29B279280069A7AC /* TANK.scn in Resources */ = {isa = PBXBuildFile; fileRef = 638334D929B279280069A7AC /* TANK.scn */; };
+		638334DD29B2A26E0069A7AC /* Int+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638334DC29B2A26E0069A7AC /* Int+EXT.swift */; };
+		639A29E429B5D24200C64B12 /* 3DModelCreation_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A29E329B5D24200C64B12 /* 3DModelCreation_Manager.swift */; };
+		63ACAAD329B2A405002C5F58 /* TankModelScene_VC+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACAAD229B2A405002C5F58 /* TankModelScene_VC+EXT.swift */; };
+		63ACAAD929B2AA8E002C5F58 /* Accelerometer_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACAAD829B2AA8E002C5F58 /* Accelerometer_Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B3D2DC21F439E2D002D7D1C /* Floor is lava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Floor is lava.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3D2DC21F439E2D002D7D1C /* TankModel_ARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TankModel_ARKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3D2DC51F439E2D002D7D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B3D2DC71F439E2D002D7D1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B3D2DC71F439E2D002D7D1C /* MainTankFieldScene_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTankFieldScene_VC.swift; sourceTree = "<group>"; };
 		0B3D2DCA1F439E2D002D7D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B3D2DCC1F439E2D002D7D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0B3D2DCF1F439E2D002D7D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B3D2DD11F439E2D002D7D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638334D929B279280069A7AC /* TANK.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = TANK.scn; sourceTree = "<group>"; };
+		638334DC29B2A26E0069A7AC /* Int+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+EXT.swift"; sourceTree = "<group>"; };
+		639A29E329B5D24200C64B12 /* 3DModelCreation_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DModelCreation_Manager.swift; sourceTree = "<group>"; };
+		63ACAAD229B2A405002C5F58 /* TankModelScene_VC+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TankModelScene_VC+EXT.swift"; sourceTree = "<group>"; };
+		63ACAAD829B2AA8E002C5F58 /* Accelerometer_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accelerometer_Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +46,7 @@
 		0B3D2DB91F439E2D002D7D1C = {
 			isa = PBXGroup;
 			children = (
-				0B3D2DC41F439E2D002D7D1C /* Floor is lava */,
+				0B3D2DC41F439E2D002D7D1C /* TankModel */,
 				0B3D2DC31F439E2D002D7D1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +54,82 @@
 		0B3D2DC31F439E2D002D7D1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B3D2DC21F439E2D002D7D1C /* Floor is lava.app */,
+				0B3D2DC21F439E2D002D7D1C /* TankModel_ARKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B3D2DC41F439E2D002D7D1C /* Floor is lava */ = {
+		0B3D2DC41F439E2D002D7D1C /* TankModel */ = {
+			isa = PBXGroup;
+			children = (
+				0B3D2DD11F439E2D002D7D1C /* Info.plist */,
+				63ACAAD529B2A45E002C5F58 /* MAIN→ */,
+				638334DB29B2A2560069A7AC /* Extension */,
+				63ACAADA29B2AAFF002C5F58 /* Manager */,
+				63ACAAD429B2A452002C5F58 /* View */,
+				63ACAAD629B2A47D002C5F58 /* Resources */,
+			);
+			path = TankModel;
+			sourceTree = "<group>";
+		};
+		638334DB29B2A2560069A7AC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				638334DC29B2A26E0069A7AC /* Int+EXT.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		63ACAAD429B2A452002C5F58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B3D2DC91F439E2D002D7D1C /* Main.storyboard */,
+				0B3D2DC71F439E2D002D7D1C /* MainTankFieldScene_VC.swift */,
+				63ACAAD729B2A49B002C5F58 /* Extension */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63ACAAD529B2A45E002C5F58 /* MAIN→ */ = {
 			isa = PBXGroup;
 			children = (
 				0B3D2DC51F439E2D002D7D1C /* AppDelegate.swift */,
-				0B3D2DC71F439E2D002D7D1C /* ViewController.swift */,
-				0B3D2DC91F439E2D002D7D1C /* Main.storyboard */,
-				0B3D2DCC1F439E2D002D7D1C /* Assets.xcassets */,
-				0B3D2DCE1F439E2D002D7D1C /* LaunchScreen.storyboard */,
-				0B3D2DD11F439E2D002D7D1C /* Info.plist */,
 			);
-			path = "Floor is lava";
+			path = "MAIN→";
+			sourceTree = "<group>";
+		};
+		63ACAAD629B2A47D002C5F58 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B3D2DCC1F439E2D002D7D1C /* Assets.xcassets */,
+				638334D929B279280069A7AC /* TANK.scn */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63ACAAD729B2A49B002C5F58 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63ACAAD229B2A405002C5F58 /* TankModelScene_VC+EXT.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		63ACAADA29B2AAFF002C5F58 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				63ACAAD829B2AA8E002C5F58 /* Accelerometer_Manager.swift */,
+				639A29E329B5D24200C64B12 /* 3DModelCreation_Manager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B3D2DC11F439E2D002D7D1C /* Floor is lava */ = {
+		0B3D2DC11F439E2D002D7D1C /* TankModel_ARKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B3D2DD41F439E2D002D7D1C /* Build configuration list for PBXNativeTarget "Floor is lava" */;
+			buildConfigurationList = 0B3D2DD41F439E2D002D7D1C /* Build configuration list for PBXNativeTarget "TankModel_ARKit" */;
 			buildPhases = (
 				0B3D2DBE1F439E2D002D7D1C /* Sources */,
 				0B3D2DBF1F439E2D002D7D1C /* Frameworks */,
@@ -79,9 +139,9 @@
 			);
 			dependencies = (
 			);
-			name = "Floor is lava";
+			name = TankModel_ARKit;
 			productName = "Floor is lava";
-			productReference = 0B3D2DC21F439E2D002D7D1C /* Floor is lava.app */;
+			productReference = 0B3D2DC21F439E2D002D7D1C /* TankModel_ARKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -91,15 +151,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Rayan Slim";
 				TargetAttributes = {
 					0B3D2DC11F439E2D002D7D1C = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
-			buildConfigurationList = 0B3D2DBD1F439E2D002D7D1C /* Build configuration list for PBXProject "Floor is lava" */;
+			buildConfigurationList = 0B3D2DBD1F439E2D002D7D1C /* Build configuration list for PBXProject "TankModel_ARKit" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B3D2DC11F439E2D002D7D1C /* Floor is lava */,
+				0B3D2DC11F439E2D002D7D1C /* TankModel_ARKit */,
 			);
 		};
 /* End PBXProject section */
@@ -122,8 +183,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B3D2DD01F439E2D002D7D1C /* LaunchScreen.storyboard in Resources */,
 				0B3D2DCD1F439E2D002D7D1C /* Assets.xcassets in Resources */,
+				638334DA29B279280069A7AC /* TANK.scn in Resources */,
 				0B3D2DCB1F439E2D002D7D1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B3D2DC81F439E2D002D7D1C /* ViewController.swift in Sources */,
+				638334DD29B2A26E0069A7AC /* Int+EXT.swift in Sources */,
+				0B3D2DC81F439E2D002D7D1C /* MainTankFieldScene_VC.swift in Sources */,
 				0B3D2DC61F439E2D002D7D1C /* AppDelegate.swift in Sources */,
+				639A29E429B5D24200C64B12 /* 3DModelCreation_Manager.swift in Sources */,
+				63ACAAD329B2A405002C5F58 /* TankModelScene_VC+EXT.swift in Sources */,
+				63ACAAD929B2AA8E002C5F58 /* Accelerometer_Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +214,6 @@
 				0B3D2DCA1F439E2D002D7D1C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0B3D2DCE1F439E2D002D7D1C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B3D2DCF1F439E2D002D7D1C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -176,6 +233,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -183,8 +241,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -210,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -233,6 +293,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -240,8 +301,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -261,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -273,13 +336,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VSKQF4Y8J8;
-				INFOPLIST_FILE = "Floor is lava/Info.plist";
+				DEVELOPMENT_TEAM = HC6H4VN3L2;
+				INFOPLIST_FILE = TankModel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Reveal-Inc.Planets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -287,20 +351,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VSKQF4Y8J8;
-				INFOPLIST_FILE = "Floor is lava/Info.plist";
+				DEVELOPMENT_TEAM = HC6H4VN3L2;
+				INFOPLIST_FILE = TankModel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Reveal-Inc.Planets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B3D2DBD1F439E2D002D7D1C /* Build configuration list for PBXProject "Floor is lava" */ = {
+		0B3D2DBD1F439E2D002D7D1C /* Build configuration list for PBXProject "TankModel_ARKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B3D2DD21F439E2D002D7D1C /* Debug */,
@@ -309,13 +374,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B3D2DD41F439E2D002D7D1C /* Build configuration list for PBXNativeTarget "Floor is lava" */ = {
+		0B3D2DD41F439E2D002D7D1C /* Build configuration list for PBXNativeTarget "TankModel_ARKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B3D2DD51F439E2D002D7D1C /* Debug */,
 				0B3D2DD61F439E2D002D7D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
