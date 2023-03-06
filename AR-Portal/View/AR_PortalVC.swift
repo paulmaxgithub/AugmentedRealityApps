@@ -67,6 +67,11 @@ class AR_PortalVC: UIViewController {
         guard let child = portal.childNode(withName: nodeName, recursively: true) else { return }
         let currentName = "SceneKitAssetCatalog.scnassets/\(image).png"
         child.geometry?.firstMaterial?.diffuse.contents = UIImage(named: currentName)
-//        child.geometry?.firstMaterial?.isDoubleSided = false
+
+        child.renderingOrder = 200
+        
+        if let mask = child.childNode(withName: "mask", recursively: false) {
+            mask.geometry?.firstMaterial?.transparency = 0.000001
+        }
     }
 }
