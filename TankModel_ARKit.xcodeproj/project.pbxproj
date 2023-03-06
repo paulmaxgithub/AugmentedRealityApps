@@ -22,6 +22,13 @@
 		63DDA68129B640020052BA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DDA68029B640020052BA21 /* Assets.xcassets */; };
 		63DDA68F29B6412F0052BA21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DDA68D29B6412F0052BA21 /* Main.storyboard */; };
 		63DDA69529B643690052BA21 /* ArMeasuringVC+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDA69429B643690052BA21 /* ArMeasuringVC+EXT.swift */; };
+		63DDA69D29B6511D0052BA21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDA69C29B6511D0052BA21 /* AppDelegate.swift */; };
+		63DDA69F29B6511D0052BA21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDA69E29B6511D0052BA21 /* SceneDelegate.swift */; };
+		63DDA6A629B651210052BA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DDA6A529B651210052BA21 /* Assets.xcassets */; };
+		63DDA6B329B653B80052BA21 /* AR_PortalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDA6B129B653B80052BA21 /* AR_PortalVC.swift */; };
+		63DDA6B629B653EC0052BA21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DDA6B529B653EC0052BA21 /* Main.storyboard */; };
+		63DDA6B829B656D10052BA21 /* AR_PortalVC+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDA6B729B656D10052BA21 /* AR_PortalVC+EXT.swift */; };
+		63DDA6BC29B68D0B0052BA21 /* SceneKitAssetCatalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DDA6BB29B68D0B0052BA21 /* SceneKitAssetCatalog.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +51,15 @@
 		63DDA68529B640020052BA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63DDA68E29B6412F0052BA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63DDA69429B643690052BA21 /* ArMeasuringVC+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArMeasuringVC+EXT.swift"; sourceTree = "<group>"; };
+		63DDA69A29B6511D0052BA21 /* AR-Portal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Portal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DDA69C29B6511D0052BA21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63DDA69E29B6511D0052BA21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		63DDA6A529B651210052BA21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63DDA6AA29B651210052BA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DDA6B129B653B80052BA21 /* AR_PortalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_PortalVC.swift; sourceTree = "<group>"; };
+		63DDA6B529B653EC0052BA21 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		63DDA6B729B656D10052BA21 /* AR_PortalVC+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AR_PortalVC+EXT.swift"; sourceTree = "<group>"; };
+		63DDA6BB29B68D0B0052BA21 /* SceneKitAssetCatalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = SceneKitAssetCatalog.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +77,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63DDA69729B6511D0052BA21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +92,7 @@
 			children = (
 				0B3D2DC41F439E2D002D7D1C /* TankModel */,
 				63DDA67629B63FFE0052BA21 /* ARMeasuring */,
+				63DDA69B29B6511D0052BA21 /* AR-Portal */,
 				0B3D2DC31F439E2D002D7D1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +102,7 @@
 			children = (
 				0B3D2DC21F439E2D002D7D1C /* TankModel_ARKit.app */,
 				63DDA67529B63FFE0052BA21 /* ARMeasuring.app */,
+				63DDA69A29B6511D0052BA21 /* AR-Portal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +218,45 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		63DDA69B29B6511D0052BA21 /* AR-Portal */ = {
+			isa = PBXGroup;
+			children = (
+				63DDA6AA29B651210052BA21 /* Info.plist */,
+				63DDA6AF29B6515E0052BA21 /* MAIN→ */,
+				63DDA6AE29B6514D0052BA21 /* View */,
+				63DDA6B029B651760052BA21 /* Resources */,
+			);
+			path = "AR-Portal";
+			sourceTree = "<group>";
+		};
+		63DDA6AE29B6514D0052BA21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63DDA6B529B653EC0052BA21 /* Main.storyboard */,
+				63DDA6B129B653B80052BA21 /* AR_PortalVC.swift */,
+				63DDA6B729B656D10052BA21 /* AR_PortalVC+EXT.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63DDA6AF29B6515E0052BA21 /* MAIN→ */ = {
+			isa = PBXGroup;
+			children = (
+				63DDA69C29B6511D0052BA21 /* AppDelegate.swift */,
+				63DDA69E29B6511D0052BA21 /* SceneDelegate.swift */,
+			);
+			path = "MAIN→";
+			sourceTree = "<group>";
+		};
+		63DDA6B029B651760052BA21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63DDA6A529B651210052BA21 /* Assets.xcassets */,
+				63DDA6BB29B68D0B0052BA21 /* SceneKitAssetCatalog.scnassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +294,23 @@
 			productReference = 63DDA67529B63FFE0052BA21 /* ARMeasuring.app */;
 			productType = "com.apple.product-type.application";
 		};
+		63DDA69929B6511D0052BA21 /* AR-Portal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63DDA6AB29B651210052BA21 /* Build configuration list for PBXNativeTarget "AR-Portal" */;
+			buildPhases = (
+				63DDA69629B6511D0052BA21 /* Sources */,
+				63DDA69729B6511D0052BA21 /* Frameworks */,
+				63DDA69829B6511D0052BA21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AR-Portal";
+			productName = "AR-Portal";
+			productReference = 63DDA69A29B6511D0052BA21 /* AR-Portal.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,6 +326,10 @@
 						LastSwiftMigration = 1320;
 					};
 					63DDA67429B63FFE0052BA21 = {
+						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					63DDA69929B6511D0052BA21 = {
 						CreatedOnToolsVersion = 13.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -265,6 +350,7 @@
 			targets = (
 				0B3D2DC11F439E2D002D7D1C /* TankModel_ARKit */,
 				63DDA67429B63FFE0052BA21 /* ARMeasuring */,
+				63DDA69929B6511D0052BA21 /* AR-Portal */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +372,16 @@
 			files = (
 				63DDA68129B640020052BA21 /* Assets.xcassets in Resources */,
 				63DDA68F29B6412F0052BA21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DDA69829B6511D0052BA21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DDA6BC29B68D0B0052BA21 /* SceneKitAssetCatalog.scnassets in Resources */,
+				63DDA6B629B653EC0052BA21 /* Main.storyboard in Resources */,
+				63DDA6A629B651210052BA21 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +409,17 @@
 				63DDA69529B643690052BA21 /* ArMeasuringVC+EXT.swift in Sources */,
 				63DDA67829B63FFE0052BA21 /* AppDelegate.swift in Sources */,
 				63DDA67A29B63FFE0052BA21 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DDA69629B6511D0052BA21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DDA69D29B6511D0052BA21 /* AppDelegate.swift in Sources */,
+				63DDA6B829B656D10052BA21 /* AR_PortalVC+EXT.swift in Sources */,
+				63DDA69F29B6511D0052BA21 /* SceneDelegate.swift in Sources */,
+				63DDA6B329B653B80052BA21 /* AR_PortalVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +651,67 @@
 			};
 			name = Release;
 		};
+		63DDA6AC29B651210052BA21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HC6H4VN3L2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AR-Portal/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.paulmax.AR-Portal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		63DDA6AD29B651210052BA21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HC6H4VN3L2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AR-Portal/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.paulmax.AR-Portal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,6 +738,15 @@
 			buildConfigurations = (
 				63DDA68629B640020052BA21 /* Debug */,
 				63DDA68729B640020052BA21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63DDA6AB29B651210052BA21 /* Build configuration list for PBXNativeTarget "AR-Portal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63DDA6AC29B651210052BA21 /* Debug */,
+				63DDA6AD29B651210052BA21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
