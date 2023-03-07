@@ -1,0 +1,22 @@
+//
+//  AppDelegate.swift
+//  Basketball_AR
+//
+//  Created by PaulmaX on 7.03.23.
+//  Copyright © 2023 Rayan Slim. All rights reserved.
+//
+
+import UIKit
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        return true
+    }
+
+    // MARK: UISceneSession Lifecycle
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+}

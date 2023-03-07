@@ -11,6 +11,13 @@
 		0B3D2DC81F439E2D002D7D1C /* MainTankFieldScene_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2DC71F439E2D002D7D1C /* MainTankFieldScene_VC.swift */; };
 		0B3D2DCB1F439E2D002D7D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3D2DC91F439E2D002D7D1C /* Main.storyboard */; };
 		0B3D2DCD1F439E2D002D7D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3D2DCC1F439E2D002D7D1C /* Assets.xcassets */; };
+		63796A5429B7432A00464553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63796A5329B7432A00464553 /* AppDelegate.swift */; };
+		63796A5629B7432A00464553 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63796A5529B7432A00464553 /* SceneDelegate.swift */; };
+		63796A5829B7432A00464553 /* BasketballARVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63796A5729B7432A00464553 /* BasketballARVC.swift */; };
+		63796A5B29B7432A00464553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63796A5929B7432A00464553 /* Main.storyboard */; };
+		63796A5D29B7432F00464553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63796A5C29B7432F00464553 /* Assets.xcassets */; };
+		63796A6929B748D100464553 /* SceneKitAssets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 63796A6829B748D100464553 /* SceneKitAssets.scnassets */; };
+		63796A6B29B752B700464553 /* BasketballARVC+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63796A6A29B752B700464553 /* BasketballARVC+EXT.swift */; };
 		638334DA29B279280069A7AC /* TANK.scn in Resources */ = {isa = PBXBuildFile; fileRef = 638334D929B279280069A7AC /* TANK.scn */; };
 		638334DD29B2A26E0069A7AC /* Int+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638334DC29B2A26E0069A7AC /* Int+EXT.swift */; };
 		639A29E429B5D24200C64B12 /* 3DModelCreation_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A29E329B5D24200C64B12 /* 3DModelCreation_Manager.swift */; };
@@ -38,6 +45,15 @@
 		0B3D2DCA1F439E2D002D7D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B3D2DCC1F439E2D002D7D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B3D2DD11F439E2D002D7D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63796A5129B7432A00464553 /* Basketball_AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basketball_AR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63796A5329B7432A00464553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63796A5529B7432A00464553 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		63796A5729B7432A00464553 /* BasketballARVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballARVC.swift; sourceTree = "<group>"; };
+		63796A5A29B7432A00464553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63796A5C29B7432F00464553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63796A6129B7432F00464553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63796A6829B748D100464553 /* SceneKitAssets.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = SceneKitAssets.scnassets; sourceTree = "<group>"; };
+		63796A6A29B752B700464553 /* BasketballARVC+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BasketballARVC+EXT.swift"; sourceTree = "<group>"; };
 		638334D929B279280069A7AC /* TANK.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = TANK.scn; sourceTree = "<group>"; };
 		638334DC29B2A26E0069A7AC /* Int+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+EXT.swift"; sourceTree = "<group>"; };
 		639A29E329B5D24200C64B12 /* 3DModelCreation_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DModelCreation_Manager.swift; sourceTree = "<group>"; };
@@ -70,6 +86,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63796A4E29B7432A00464553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63DDA67229B63FFE0052BA21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,6 +116,7 @@
 				0B3D2DC41F439E2D002D7D1C /* TankModel */,
 				63DDA67629B63FFE0052BA21 /* ARMeasuring */,
 				63DDA69B29B6511D0052BA21 /* AR-Portal */,
+				63796A5229B7432A00464553 /* Basketball_AR */,
 				0B3D2DC31F439E2D002D7D1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +127,7 @@
 				0B3D2DC21F439E2D002D7D1C /* TankModel_ARKit.app */,
 				63DDA67529B63FFE0052BA21 /* ARMeasuring.app */,
 				63DDA69A29B6511D0052BA21 /* AR-Portal.app */,
+				63796A5129B7432A00464553 /* Basketball_AR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +143,45 @@
 				63ACAAD629B2A47D002C5F58 /* Resources */,
 			);
 			path = TankModel;
+			sourceTree = "<group>";
+		};
+		63796A5229B7432A00464553 /* Basketball_AR */ = {
+			isa = PBXGroup;
+			children = (
+				63796A6129B7432F00464553 /* Info.plist */,
+				63796A6529B7437900464553 /* MAIN→ */,
+				63796A6629B7439700464553 /* View */,
+				63796A6729B743A500464553 /* Resources */,
+			);
+			path = Basketball_AR;
+			sourceTree = "<group>";
+		};
+		63796A6529B7437900464553 /* MAIN→ */ = {
+			isa = PBXGroup;
+			children = (
+				63796A5329B7432A00464553 /* AppDelegate.swift */,
+				63796A5529B7432A00464553 /* SceneDelegate.swift */,
+			);
+			path = "MAIN→";
+			sourceTree = "<group>";
+		};
+		63796A6629B7439700464553 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63796A5929B7432A00464553 /* Main.storyboard */,
+				63796A5729B7432A00464553 /* BasketballARVC.swift */,
+				63796A6A29B752B700464553 /* BasketballARVC+EXT.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63796A6729B743A500464553 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63796A5C29B7432F00464553 /* Assets.xcassets */,
+				63796A6829B748D100464553 /* SceneKitAssets.scnassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		638334DB29B2A2560069A7AC /* Extension */ = {
@@ -277,6 +341,23 @@
 			productReference = 0B3D2DC21F439E2D002D7D1C /* TankModel_ARKit.app */;
 			productType = "com.apple.product-type.application";
 		};
+		63796A5029B7432A00464553 /* Basketball_AR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63796A6429B7432F00464553 /* Build configuration list for PBXNativeTarget "Basketball_AR" */;
+			buildPhases = (
+				63796A4D29B7432A00464553 /* Sources */,
+				63796A4E29B7432A00464553 /* Frameworks */,
+				63796A4F29B7432A00464553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Basketball_AR;
+			productName = Basketball_AR;
+			productReference = 63796A5129B7432A00464553 /* Basketball_AR.app */;
+			productType = "com.apple.product-type.application";
+		};
 		63DDA67429B63FFE0052BA21 /* ARMeasuring */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63DDA68829B640020052BA21 /* Build configuration list for PBXNativeTarget "ARMeasuring" */;
@@ -325,6 +406,10 @@
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1320;
 					};
+					63796A5029B7432A00464553 = {
+						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					63DDA67429B63FFE0052BA21 = {
 						CreatedOnToolsVersion = 13.2.1;
 						ProvisioningStyle = Automatic;
@@ -351,6 +436,7 @@
 				0B3D2DC11F439E2D002D7D1C /* TankModel_ARKit */,
 				63DDA67429B63FFE0052BA21 /* ARMeasuring */,
 				63DDA69929B6511D0052BA21 /* AR-Portal */,
+				63796A5029B7432A00464553 /* Basketball_AR */,
 			);
 		};
 /* End PBXProject section */
@@ -363,6 +449,16 @@
 				0B3D2DCD1F439E2D002D7D1C /* Assets.xcassets in Resources */,
 				638334DA29B279280069A7AC /* TANK.scn in Resources */,
 				0B3D2DCB1F439E2D002D7D1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63796A4F29B7432A00464553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63796A6929B748D100464553 /* SceneKitAssets.scnassets in Resources */,
+				63796A5D29B7432F00464553 /* Assets.xcassets in Resources */,
+				63796A5B29B7432A00464553 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +497,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63796A4D29B7432A00464553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63796A6B29B752B700464553 /* BasketballARVC+EXT.swift in Sources */,
+				63796A5829B7432A00464553 /* BasketballARVC.swift in Sources */,
+				63796A5429B7432A00464553 /* AppDelegate.swift in Sources */,
+				63796A5629B7432A00464553 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63DDA67129B63FFE0052BA21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,6 +537,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				0B3D2DCA1F439E2D002D7D1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63796A5929B7432A00464553 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63796A5A29B7432A00464553 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -588,6 +703,67 @@
 			};
 			name = Release;
 		};
+		63796A6229B7432F00464553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HC6H4VN3L2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Basketball_AR/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.paulmax.Basketball-AR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		63796A6329B7432F00464553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HC6H4VN3L2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Basketball_AR/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.paulmax.Basketball-AR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		63DDA68629B640020052BA21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -729,6 +905,15 @@
 			buildConfigurations = (
 				0B3D2DD51F439E2D002D7D1C /* Debug */,
 				0B3D2DD61F439E2D002D7D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63796A6429B7432F00464553 /* Build configuration list for PBXNativeTarget "Basketball_AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63796A6229B7432F00464553 /* Debug */,
+				63796A6329B7432F00464553 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
