@@ -15,6 +15,10 @@ class BasketballARVC: UIViewController {
     
     private var config = ARWorldTrackingConfiguration()
     
+    private var basketIsAdded: Bool {
+        return sceneView.scene.rootNode.childNode(withName: "Basket", recursively: false) != nil
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         config.planeDetection = .horizontal
@@ -37,19 +41,21 @@ class BasketballARVC: UIViewController {
         guard let raycastQuery = sceneView.raycastQuery(from: touchLocation, allowing: .existingPlaneGeometry, alignment: .horizontal) else { return }
         let raycastResults = sceneView.session.raycast(raycastQuery)
         if let raycastResult = raycastResults.first {
-            addBasketPlace(by: raycastResult)
+            ///ADD MODEL BY AR MODEL PROVIDER CLASS
+            ARModelProvider.present.addBasketPlace(by: raycastResult, in: sceneView)
         }
     }
     
-    private func addBasketPlace(by raycastResult: ARRaycastResult) {
-        let transform = raycastResult.worldTransform
-        let x_Position = transform.columns.3.x
-        let y_Position = transform.columns.3.y
-        let z_Position = transform.columns.3.z
-        let basketScene = SCNScene(named: "SceneKitAssets.scnassets/BasketScene.scn")
-        if let basketNode = basketScene?.rootNode.childNode(withName: "Basket", recursively: false) {
-            basketNode.position = SCNVector3(x_Position, y_Position, z_Position)
-            sceneView.scene.rootNode.addChildNode(basketNode)
+    //MARK: - TOUCHES
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let sceneView = touches.first?.view as? ARSCNView else { return }
+        if basketIsAdded {
+            ARModelProvider.present.addBall(in: sceneView)
+            
         }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
     }
 }

@@ -18,6 +18,7 @@
 		63796A5D29B7432F00464553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63796A5C29B7432F00464553 /* Assets.xcassets */; };
 		63796A6929B748D100464553 /* SceneKitAssets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 63796A6829B748D100464553 /* SceneKitAssets.scnassets */; };
 		63796A6B29B752B700464553 /* BasketballARVC+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63796A6A29B752B700464553 /* BasketballARVC+EXT.swift */; };
+		63796A6E29B772F400464553 /* ARModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63796A6D29B772F400464553 /* ARModelProvider.swift */; };
 		638334DA29B279280069A7AC /* TANK.scn in Resources */ = {isa = PBXBuildFile; fileRef = 638334D929B279280069A7AC /* TANK.scn */; };
 		638334DD29B2A26E0069A7AC /* Int+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638334DC29B2A26E0069A7AC /* Int+EXT.swift */; };
 		639A29E429B5D24200C64B12 /* 3DModelCreation_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A29E329B5D24200C64B12 /* 3DModelCreation_Manager.swift */; };
@@ -54,6 +55,7 @@
 		63796A6129B7432F00464553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63796A6829B748D100464553 /* SceneKitAssets.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = SceneKitAssets.scnassets; sourceTree = "<group>"; };
 		63796A6A29B752B700464553 /* BasketballARVC+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BasketballARVC+EXT.swift"; sourceTree = "<group>"; };
+		63796A6D29B772F400464553 /* ARModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelProvider.swift; sourceTree = "<group>"; };
 		638334D929B279280069A7AC /* TANK.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = TANK.scn; sourceTree = "<group>"; };
 		638334DC29B2A26E0069A7AC /* Int+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+EXT.swift"; sourceTree = "<group>"; };
 		639A29E329B5D24200C64B12 /* 3DModelCreation_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DModelCreation_Manager.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				63796A6129B7432F00464553 /* Info.plist */,
 				63796A6529B7437900464553 /* MAIN→ */,
+				63796A6C29B7711500464553 /* Utility */,
 				63796A6629B7439700464553 /* View */,
 				63796A6729B743A500464553 /* Resources */,
 			);
@@ -182,6 +185,14 @@
 				63796A6829B748D100464553 /* SceneKitAssets.scnassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		63796A6C29B7711500464553 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				63796A6D29B772F400464553 /* ARModelProvider.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		638334DB29B2A2560069A7AC /* Extension */ = {
@@ -503,6 +514,7 @@
 			files = (
 				63796A6B29B752B700464553 /* BasketballARVC+EXT.swift in Sources */,
 				63796A5829B7432A00464553 /* BasketballARVC.swift in Sources */,
+				63796A6E29B772F400464553 /* ARModelProvider.swift in Sources */,
 				63796A5429B7432A00464553 /* AppDelegate.swift in Sources */,
 				63796A5629B7432A00464553 /* SceneDelegate.swift in Sources */,
 			);
