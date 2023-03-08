@@ -17,7 +17,7 @@ final class ARModelProvider {
     static let present = ARModelProvider()
     
     //MARK: - GETTER & SETTER FORCE POWER
-    private var _forcePower: Float = 1.0
+    private var _forcePower: Float = 0.0
     
     public var forcePower: Float {
         get { return _forcePower}
@@ -73,7 +73,7 @@ final class ARModelProvider {
         
         sceneView.scene.rootNode.addChildNode(ball)
         
-        _forcePower = 1.0
+        _forcePower = 0.0
     }
     
     private func removeNodesFromParents(in sceneView: ARSCNView) {

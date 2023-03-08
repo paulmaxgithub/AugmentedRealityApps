@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xU-6E-vqN">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dea-GH-yWQ">
                                 <rect key="frame" x="173.5" y="422.5" width="67.5" height="51"/>
@@ -40,6 +40,21 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="kq0-Qs-PAD">
+                                <rect key="frame" x="8" y="44" width="398" height="21"/>
+                                <color key="backgroundColor" white="0.28049442320000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="igJ-fA-ghn"/>
+                                </constraints>
+                                <color key="progressTintColor" systemColor="systemRedColor"/>
+                                <color key="trackTintColor" white="0.28049442320000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -48,20 +63,24 @@
                             <constraint firstItem="gQT-7c-cpQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="7tB-km-9k1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1xU-6E-vqN" secondAttribute="bottom" id="Mdf-ok-ziT"/>
                             <constraint firstItem="dea-GH-yWQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Oqk-5d-RWY"/>
-                            <constraint firstItem="1xU-6E-vqN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QwU-8t-CeS"/>
+                            <constraint firstItem="1xU-6E-vqN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QwU-8t-CeS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kq0-Qs-PAD" secondAttribute="trailing" constant="8" id="TNy-Nk-LIS"/>
                             <constraint firstItem="dea-GH-yWQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vvi-yj-mDo"/>
+                            <constraint firstItem="kq0-Qs-PAD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZY7-Pe-qE1"/>
+                            <constraint firstItem="kq0-Qs-PAD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="cJl-ok-dSH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1xU-6E-vqN" secondAttribute="trailing" id="efq-7u-iw1"/>
                             <constraint firstItem="1xU-6E-vqN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="poN-Ya-cKe"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="detectionLabel" destination="gQT-7c-cpQ" id="bmx-j0-HoM"/>
+                        <outlet property="forcePowerProgress" destination="kq0-Qs-PAD" id="wKj-Nh-iDw"/>
                         <outlet property="sceneView" destination="1xU-6E-vqN" id="liC-ro-aJP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-252" y="46"/>
+            <point key="canvasLocation" x="-252.17391304347828" y="45.535714285714285"/>
         </scene>
     </scenes>
     <resources>
@@ -71,6 +90,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

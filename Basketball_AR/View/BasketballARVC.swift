@@ -13,6 +13,7 @@ class BasketballARVC: UIViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var detectionLabel: UILabel!
+    @IBOutlet weak var forcePowerProgress: UIProgressView!
     
     private var config = ARWorldTrackingConfiguration()
     
@@ -51,8 +52,9 @@ class BasketballARVC: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let _ = touches.first?.view as? ARSCNView else { return }
         if ARModelProvider.present.basketIsAdded {
-            timer.perform {
+            timer.perform { [unowned self] in
                 ARModelProvider.present.forcePower += 1.0
+                forcePowerProgress.progress = ARModelProvider.present.forcePower / 10
                 return .continue
             }
         }
@@ -63,6 +65,11 @@ class BasketballARVC: UIViewController {
         if ARModelProvider.present.basketIsAdded {
             timer.stop()
             ARModelProvider.present.addBall(in: sceneView)
+            
+            UIView.animate(withDuration: 2.5, delay: 0, options: .curveLinear) { [unowned self] in
+                forcePowerProgress.progress = 0
+                view.layoutIfNeeded()
+            }
         }
     }
 }
