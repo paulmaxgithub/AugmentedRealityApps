@@ -7,6 +7,7 @@
 //
 
 import ARKit
+import TimerStep
 
 class BasketballARVC: UIViewController {
     
@@ -15,9 +16,7 @@ class BasketballARVC: UIViewController {
     
     private var config = ARWorldTrackingConfiguration()
     
-    private var basketIsAdded: Bool {
-        return sceneView.scene.rootNode.childNode(withName: "Basket", recursively: false) != nil
-    }
+    private var timer = TimerStep(0.05).seconds
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +29,9 @@ class BasketballARVC: UIViewController {
     }
     
     private func gesture() -> UITapGestureRecognizer {
-        return UITapGestureRecognizer(target: self, action: #selector(tapHandle))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapHandle))
+        tap.cancelsTouchesInView = false
+        return tap
     }
     
     @objc private func tapHandle(sender: UITapGestureRecognizer) {
@@ -46,16 +47,22 @@ class BasketballARVC: UIViewController {
         }
     }
     
-    //MARK: - TOUCHES
+    //MARK: - TOUCHES SETUP TO SHOOT THE BALL
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let sceneView = touches.first?.view as? ARSCNView else { return }
-        if basketIsAdded {
-            ARModelProvider.present.addBall(in: sceneView)
-            
+        guard let _ = touches.first?.view as? ARSCNView else { return }
+        if ARModelProvider.present.basketIsAdded {
+            timer.perform {
+                ARModelProvider.present.forcePower += 1.0
+                return .continue
+            }
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        guard let sceneView = touches.first?.view as? ARSCNView else { return }
+        if ARModelProvider.present.basketIsAdded {
+            timer.stop()
+            ARModelProvider.present.addBall(in: sceneView)
+        }
     }
 }

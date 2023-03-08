@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TimerStep",
+        "repositoryURL": "https://github.com/paulmaxgithub/TimerStep.git",
+        "state": {
+          "branch": "main",
+          "revision": "e1bd861543657f08c4523d2f0ea83d7676e8a65b",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
